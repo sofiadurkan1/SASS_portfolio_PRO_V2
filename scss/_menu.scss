@@ -1,0 +1,27 @@
+.nav {
+
+    .menu-nav {
+        text-align: right;
+
+        &__item {
+            display: inline;
+            padding-right: 1rem;
+
+            &.active > a {
+                color: $secondary-color;
+            }
+        }
+
+        &__link {
+            font-size: 1rem;
+            display: inline-block;
+            text-transform: uppercase;
+            font-weight: 300;
+            @include transition-ease;
+
+            &:hover {
+                color: blue;
+            }
+        }
+    }
+} 
